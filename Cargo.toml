@@ -1,0 +1,24 @@
+[package]
+name = "embedded-watering"
+version = "0.0.1"
+authors = ["Marvin Klemp <mail@marvin-klemp.de>"]
+description = ""
+keywords = []
+categories = []
+license = "MIT"
+
+[profile.release]
+opt-level = 's'
+lto = true
+#codegen-units = 1
+debug = false
+
+[dependencies]
+stm32f103xx = { git = "https://github.com/japaric/stm32f103xx" }
+stm32f103xx-hal = { git = "https://github.com/japaric/stm32f103xx-hal" }
+
+[dependencies.cortex-m]
+version = "0.6.0"
+
+[dependencies.cortex-m-rt]
+version = "0.6.8"

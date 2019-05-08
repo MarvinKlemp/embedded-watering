@@ -1,0 +1,6 @@
+# Install
+
+## Rust Requirements
+
+Rust target for arm thumb (stm32)
+`rustup target add thumbv7m-none-eabi`
